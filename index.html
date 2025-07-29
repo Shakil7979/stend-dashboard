@@ -25,13 +25,14 @@
     </head>
     <body> 
  
+        <div class="overlay-menu"></div>
 
         <main class="main_area"> 
             <!--=====================  Start Main Area  ====================-->
               <div class="container-fluid">
                 <div class="row">
                     <!-- Sidebar -->
-                    <div class="col-md-3 p-0 sidebar ">
+                    <div class="col-lg-3 p-0 sidebar ">
                         <div class="sidebar-content"> 
                             <div class="text-center py-4">
                                 <img src="assets/images/logo.png" alt="Logo" width="220">
@@ -178,16 +179,21 @@
                     </div>
 
                     <!-- Main Content -->
-                    <div class="col-md-9 py-4 main-content-area">
+                    <div class="col-lg-9 py-4 main-content-area">
                         <div class="px-4">
                             <div class="row align-items-center mx-0 card-box mb-4">
-                                <div class="col-md-6">
-                                    <div class="header-content">
-                                        <h4>Hallo John Doe,</h4>
-                                        <p class="text-muted">Competitieleider - Vennebekken</p>
-                                    </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center g-5">
+                                        <div class="mobile-bars d-lg-none d-block">
+                                            <button><i class="fas fa-bars"></i></button>
+                                        </div>
+                                        <div class="header-content ml-5 d-md-block d-none">
+                                            <h4>Hallo John Doe,</h4>
+                                            <p class="text-muted">Competitieleider - Vennebekken</p>
+                                        </div>
+                                    </div> 
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <div class="top-header-area">
                                         <div class="dropdown">
                                         <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -207,13 +213,13 @@
 
                             <div class="mb-4 card-box">
                                 <div class="row g-3 align-items-center">
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                          <div class="card-mo-header">
                                             <h4>Moyenne</h4>
                                             <p>Overzicht</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-6">
                                         <div class="export-box d-flex justify-content-end"> 
                                             <button><i class="fa-solid fa-download"></i> Export </button>
                                         </div>
@@ -221,7 +227,7 @@
                                 </div>
                                
                                 <div class="row mt-4 g-3">
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3 col-md-6">
                                         <div class="info-box card-box">
                                             <div class="info-box-icon">
                                                 <i class="fa-solid fa-circle-half-stroke"></i>
@@ -230,7 +236,7 @@
                                             <small>Libre</small>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3 col-md-6">
                                         <div class="info-box card-box">
                                             <div class="info-box-icon">
                                                 <i class="fa-solid fa-chart-line"></i>
@@ -239,7 +245,7 @@
                                             <small>Driebanden</small>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3 col-md-6">
                                         <div class="info-box card-box">
                                             <div class="info-box-icon">
                                                 <i class="fa-solid fa-chart-pie"></i>
@@ -248,7 +254,7 @@
                                             <small>Bandstoten</small>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3 col-md-6">
                                         <div class="info-box card-box">
                                             <div class="info-box-icon">
                                                <i class="fa-solid fa-diagram-project"></i>
@@ -261,7 +267,7 @@
                             </div>
 
                             <div class="row g-4">
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="card-box">
                                         <div class="section-title">Persoonlijke Gegevens</div>
                                         <form>
@@ -284,7 +290,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="card-box">
                                         <div class="section-title">Voorkeuren</div>
                                         <form>
@@ -304,7 +310,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="card-box">
                                         <div class="section-title">Inlog Gegevens</div>
                                         <form>

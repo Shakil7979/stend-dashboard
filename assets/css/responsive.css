@@ -1,19 +1,40 @@
-@media all and (max-width: 1199px){
+@media all and (max-width: 1199px) {}
 
+@media all and (max-width: 991px) {
+    .sidebar {
+        position: absolute;
+        width: 310px;
+        z-index: 9;
+        top: 0;
+        left: -100%;
+        transition: 0.3s;
+    }
+
+    .mobile-bars button {
+        background: transparent;
+        border: 1px solid #6c6c6c;
+        padding: 6px;
+        border-radius: 5px;
+        font-size: 26px;
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
 }
 
-@media all and (max-width: 991px){
-	
+@media all and (max-width: 767px) {}
+
+@media all and (max-width: 575px) {
+    .info-box h4 {
+        font-size: 30px;
+    }
+
+    .info-box-icon {
+        font-size: 35px;
+        width: 55px;
+        height: 55px; 
+        border-radius: 5px; 
+    }
 }
 
-@media all and (max-width: 767px){
-	
-}
-
-@media all and (max-width: 575px){
-	
-}
-
-@media all and (max-width: 450px){
-	
-}
+@media all and (max-width: 450px) {}

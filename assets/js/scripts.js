@@ -1,10 +1,17 @@
 $(document).ready(function(){
 	// Mobile Menu
-	// $('.logo a i').click(function(){
-	// 	$('.menu ul').slideToggle(1000);
+	$('.mobile-bars button').click(function(){
+		$('.sidebar').css('left','0');
+		$('.overlay-menu').show();
 
-	// 	return false
-	// });
+		return false
+	});
+	$('.overlay-menu').click(function(){
+		$('.sidebar').css('left','-100%');
+		$('.overlay-menu').hide();
+
+		return false
+	});
 
 	// Banner Carousel
 	// $('.banner_carousel').owlCarousel({
