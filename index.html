@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <title>Stend Dashboard</title>
+        <link rel="icon" href="assets/images/favicon.png">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body> 
+ 
+
+        <main class="main_area"> 
+            <!--=====================  Start Main Area  ====================-->
+              <div class="container-fluid">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-md-3 p-0 sidebar ">
+                        <div class="sidebar-content"> 
+                            <div class="text-center py-4">
+                                <img src="assets/images/logo.png" alt="Logo" width="220">
+                            </div>
+                            <div class="accordion" id="sidebarMenu">
+                            <a class="nav-link active px-3" href="#"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                            
+
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuWedstrijden">
+                                    <i class="bi bi-calendar-check me-2"></i>Contactlijst
+                                </button>
+                                </h2>
+                                <div id="menuWedstrijden" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Per locatie</a>
+                                    <a class="nav-link py-1" href="#">Wedstrijd Aanpassen</a>
+                                </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompetitie">
+                                    <i class="bi bi-trophy me-2"></i>Wedstrijden voor locatie
+                                </button>
+                                </h2>
+                                <div id="menuCompetitie" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Individuele Ranking</a>
+                                    <a class="nav-link py-1" href="#">Team Ranking</a>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="divider"></div>
+
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuSpelers">
+                                    <i class="bi bi-people me-2"></i>Competitie
+                                </button>
+                                </h2>
+                                <div id="menuSpelers" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Teams">
+                                    <i class="bi bi-people me-2"></i>Teams
+                                </button>
+                                </h2>
+                                <div id="Teams" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Toevoegen">
+                                    <i class="bi bi-people me-2"></i>Spelers
+                                </button>
+                                </h2>
+                                <div id="Toevoegen" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Clublokaal">
+                                    <i class="bi bi-people me-2"></i>Clublokaal
+                                </button>
+                                </h2>
+                                <div id="Clublokaal" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div> 
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Verzetten">
+                                    <i class="bi bi-people me-2"></i>Wedstrijd Verzetten
+                                </button>
+                                </h2>
+                                <div id="Verzetten" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div> 
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Invoeren">
+                                    <i class="bi bi-people me-2"></i>Wedstrijd Invoeren
+                                </button>
+                                </h2>
+                                <div id="Invoeren" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div> 
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Aanpassen">
+                                    <i class="bi bi-people me-2"></i>Wedstrijd Aanpassen
+                                </button>
+                                </h2>
+                                <div id="Aanpassen" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
+                                <div class="submenu nav flex-column">
+                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
+                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
+                                </div>
+                                </div>
+                            </div> 
+        
+                            </div>
+                        </div>
+                        <div class="sidebar-bottom m-4" >
+                            <div class="text-white text-center ">
+                                <p class="mb-2">Opgeven voor een PK?</p>
+                                <button class="btn-1 mt-3">Geef je hier op!</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="col-md-9 py-4 main-content-area">
+                        <div class="px-4">
+                            <div class="row align-items-center mx-0 card-box mb-4">
+                                <div class="col-md-6">
+                                    <div class="header-content">
+                                        <h4>Hallo John Doe,</h4>
+                                        <p class="text-muted">Competitieleider - Vennebekken</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="top-header-area">
+                                        <div class="dropdown">
+                                        <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="me-2 user-name">John Doe</span>
+                                            <img src="assets/images/use.png" alt="Admin" class="profile-img">
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end drop-menu-ul">
+                                            <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user-tie"></i> Profile</a></li> 
+                                            <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-gear"></i> Settings</a></li> 
+                                            <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>  
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="mb-4 card-box">
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-6">
+                                         <div class="card-mo-header">
+                                            <h4>Moyenne</h4>
+                                            <p>Overzicht</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="export-box d-flex justify-content-end"> 
+                                            <button><i class="fa-solid fa-download"></i> Export </button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="row mt-4 g-3">
+                                    <div class="col-md-3">
+                                        <div class="info-box card-box">
+                                            <div class="info-box-icon">
+                                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                            </div>
+                                            <h4>1.750</h4>
+                                            <small>Libre</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box card-box">
+                                            <div class="info-box-icon">
+                                                <i class="fa-solid fa-chart-line"></i>
+                                            </div>
+                                            <h4>1.750</h4>
+                                            <small>Driebanden</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box card-box">
+                                            <div class="info-box-icon">
+                                                <i class="fa-solid fa-chart-pie"></i>
+                                            </div>
+                                            <h4>1.750</h4>
+                                            <small>Bandstoten</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="info-box card-box">
+                                            <div class="info-box-icon">
+                                               <i class="fa-solid fa-diagram-project"></i>
+                                            </div>
+                                            <h4>1.750</h4>
+                                            <small>PK Driebanden</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card-box">
+                                        <div class="section-title">Persoonlijke Gegevens</div>
+                                        <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Voornaam">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tussenvoegsel">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Achternaam">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Telefoon">
+                                        </div>
+                                        <button type="submit" class="btn-custom mt-4">Wijzig</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="section-title">Voorkeuren</div>
+                                        <form>
+                                        <div class="form-check  ">
+                                            <input class="form-check-input" type="checkbox" id="opt1" checked>
+                                            <label class="form-check-label" for="opt1">Mijn gespeelde wedstrijden</label>
+                                        </div>
+                                        <div class="form-check  ">
+                                            <input class="form-check-input" type="checkbox" id="opt2">
+                                            <label class="form-check-label" for="opt2">Team wedstrijden</label>
+                                        </div>
+                                        <div class="form-check  ">
+                                            <input class="form-check-input" type="checkbox" id="opt3">
+                                            <label class="form-check-label" for="opt3">Alle wedstrijden van mijn vereniging</label>
+                                        </div>
+                                        <button type="submit" class=" btn-custom mt-4">Wijzig</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-box">
+                                        <div class="section-title">Inlog Gegevens</div>
+                                        <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Gebruikersnaam">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Wachtwoord">
+                                        </div>
+                                        <button type="submit" class=" btn-custom mt-4">Wijzig</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!--=====================  End Main Area  ====================--> 
+        </main> 
+ 
+
+
+        <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
+        <!-- jQuery -->
+        <script src="assets/js/jquery.min.js"></script> 
+        <!-- Bootstrap --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr-3.11.2.min.js"></script>
+        <!-- Custom JS (Handed)-->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
