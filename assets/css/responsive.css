@@ -3,7 +3,7 @@
 @media all and (max-width: 991px) {
     .sidebar {
         position: absolute;
-        width: 310px;
+        width: 330px;
         z-index: 9;
         top: 0;
         left: -100%;
@@ -12,13 +12,18 @@
 
     .mobile-bars button {
         background: transparent;
-        border: 1px solid #6c6c6c;
-        padding: 6px;
+        border: 1px solid #6c6c6c; 
         border-radius: 5px;
         font-size: 26px;
         width: 45px;
         height: 45px;
         margin-right: 20px;
+    }
+    .sidebar-content {
+        padding: 0 20px;
+    }
+    .sidebar-bottom { 
+        margin: 20px;
     }
 }
 
