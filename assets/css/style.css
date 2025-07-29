@@ -294,5 +294,28 @@
 	z-index: 9;
  }
 
+ .sidebar-menu li a {
+	display: block; 
+	padding: 12px 20px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #9197B3;
+	border-radius: 5px;
+}
+
+ .sidebar-menu li a.active,
+ .sidebar-menu li a:hover { 
+	background-color: #198754; 
+	color: #fff;
+}
+
+ .sidebar-menu li  {
+	margin-bottom: 5px;
+ }
+
+ .sidebar-content {
+	padding: 0 50px;
+}
+
 
  /*======================  End Page  ======================*/
