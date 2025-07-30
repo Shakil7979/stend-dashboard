@@ -1,19 +1,17 @@
 $(document).ready(function(){
-	// Mobile Menu
 	$('.mobile-bars button').click(function(){
 		$('.sidebar').css('left','0');
 		$('.overlay-menu').show();
 
-		return false
+		return false;
 	});
 	$('.overlay-menu').click(function(){
 		$('.sidebar').css('left','-100%');
 		$('.overlay-menu').hide();
 
-		return false
+		return false;
 	}); 
-
-});
+})
 
  
 document.querySelectorAll('.accordion-toggle').forEach(toggle => {
