@@ -11,19 +11,38 @@ $(document).ready(function(){
 		$('.overlay-menu').hide();
 
 		return false
+	}); 
+
+});
+
+ 
+document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+	toggle.addEventListener('click', function (e) {
+	const targetId = this.getAttribute('href');
+	const target = document.querySelector(targetId);
+	const icon = this.querySelector('.toggle-icon');
+
+	// Collapse other menus
+	document.querySelectorAll('.collapse').forEach(c => {
+		if (c !== target) {
+		const bsCollapse = bootstrap.Collapse.getInstance(c) || new bootstrap.Collapse(c, { toggle: false });
+		bsCollapse.hide();
+		}
 	});
 
-	// Banner Carousel
-	// $('.banner_carousel').owlCarousel({
-	// 	items:1,
-	// 	loop:true,
-	// 	nav:true,
-	// 	dots:true,
-	// 	autoplay:true,
-	// });
+	// Reset all icons
+	document.querySelectorAll('.toggle-icon').forEach(i => i.classList.remove('rotate'));
 
+	// Toggle current collapse
+	const bsCollapse = bootstrap.Collapse.getInstance(target) || new bootstrap.Collapse(target, { toggle: false });
+	if (target.classList.contains('show')) {
+		bsCollapse.hide();
+		icon.classList.remove('rotate');
+	} else {
+		bsCollapse.show();
+		icon.classList.add('rotate');
+	}
 
-
-
-
+	e.preventDefault(); // prevent jump
+	});
 });

@@ -38,156 +38,40 @@
                                <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="220"></a>
                             </div>
                             <ul class="sidebar-menu list-unstyled mt-5">
-                                <li><a class="active" href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
-                                <li><a href="#"><i class="bi bi-person-lines-fill me-2"></i>Contactlijst</a></li>
-                                <li><a href="#"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
-                                <li><div class="divider"></div></li>
-                                <li><a href="#"><i class="bi bi-trophy me-2"></i>Competitie</a></li>
-                                <li><a href="#"><i class="bi bi-people me-2"></i>Teams</a></li>
-                                <li><a href="#"><i class="bi bi-person-circle me-2"></i>Spelers</a></li> 
-                                <li><div class="divider"></div></li>
-                                <li><a href="#"><i class="bi bi-house-door me-2"></i>Clublokaal</a></li>
-                                <li><a href="#"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
-                                <li><a href="#"><i class="bi bi-pencil-square me-2"></i>Wedstrijd Invoeren</a></li>
-                                <li><a href="#"><i class="bi bi-sliders me-2"></i>Wedstrijd Aanpassen</a></li>
+                                    <li><a href="index.html"  class="active"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+                                    <li><a href="contactlijst.html"><i class="bi bi-person-lines-fill me-2"></i>Contactlijst</a></li>
+                                    <li><a href="wedstrijden.html"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
+
+                                    <li><div class="divider"></div></li>
+
+                                    <!-- Competitie Dropdown -->
+                                    <li>
+                                        <a href="#competitieMenu"  class="accordion-toggle menu-accordion-toggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="competitieMenu" class="active">
+                                            <span class="d-flex gap-3 align-items-center"><i class="bi bi-trophy me-2"></i>Competitie</span>
+                                            <i class="bi bi-chevron-down toggle-icon"></i>
+                                        </a>
+                                        <div class="collapse globalDropDownMenu" id="competitieMenu">
+                                            <ul class="nav flex-column ms-3 mt-2">
+                                                <li><a href="competitie.html"><i class="bi bi-trophy me-2"></i>Competitie</a></li>
+                                                <li><a href="aanpassen-competitie.html"><i class="bi bi-pencil-square me-2"></i>Aanpassen Competitie</a></li>
+                                                <li><a href="aanpassen-klasse.html" ><i class="bi bi-sliders me-2"></i>Aanpassen Klasse</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="#"><i class="bi bi-people me-2"></i>Teams</a></li>
+                                    <li><a href="spelers.html"><i class="bi bi-trophy me-2"></i>Spelers</a></li> 
+
+                                    <li><div class="divider"></div></li>
+
+                                    <li><a href="404.html"><i class="bi bi-house-door me-2"></i>Clublokaal</a></li>
+                                    <li><a href="#"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
+                                    <li><a href="#"><i class="bi bi-pencil-square me-2"></i>Wedstrijd Invoeren</a></li>
+                                    <li><a href="#"><i class="bi bi-sliders me-2"></i>Wedstrijd Aanpassen</a></li>
                                 </ul>
 
                         </div>
-
-                        <!-- <div class="sidebar-content"> 
-                            
-                            <div class="accordion" id="sidebarMenu">
-                            <a class="nav-link active px-3" href="#"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
-                            
-
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuWedstrijden">
-                                    <i class="bi bi-calendar-check me-2"></i>Contactlijst
-                                </button>
-                                </h2>
-                                <div id="menuWedstrijden" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Per locatie</a>
-                                    <a class="nav-link py-1" href="#">Wedstrijd Aanpassen</a>
-                                </div>
-                                </div>
-                            </div>
-                            
-
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuCompetitie">
-                                    <i class="bi bi-trophy me-2"></i>Wedstrijden voor locatie
-                                </button>
-                                </h2>
-                                <div id="menuCompetitie" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Individuele Ranking</a>
-                                    <a class="nav-link py-1" href="#">Team Ranking</a>
-                                </div>
-                                </div>
-                            </div>
-                            
-                            <div class="divider"></div>
-
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuSpelers">
-                                    <i class="bi bi-people me-2"></i>Competitie
-                                </button>
-                                </h2>
-                                <div id="menuSpelers" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Teams">
-                                    <i class="bi bi-people me-2"></i>Teams
-                                </button>
-                                </h2>
-                                <div id="Teams" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Toevoegen">
-                                    <i class="bi bi-people me-2"></i>Spelers
-                                </button>
-                                </h2>
-                                <div id="Toevoegen" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="divider"></div>
-
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Clublokaal">
-                                    <i class="bi bi-people me-2"></i>Clublokaal
-                                </button>
-                                </h2>
-                                <div id="Clublokaal" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div> 
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Verzetten">
-                                    <i class="bi bi-people me-2"></i>Wedstrijd Verzetten
-                                </button>
-                                </h2>
-                                <div id="Verzetten" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div> 
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Invoeren">
-                                    <i class="bi bi-people me-2"></i>Wedstrijd Invoeren
-                                </button>
-                                </h2>
-                                <div id="Invoeren" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div> 
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                <button class="nav-link accordion-button collapsed px-3 py-2 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#Aanpassen">
-                                    <i class="bi bi-people me-2"></i>Wedstrijd Aanpassen
-                                </button>
-                                </h2>
-                                <div id="Aanpassen" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                                <div class="submenu nav flex-column">
-                                    <a class="nav-link py-1" href="#">Ledenlijst</a>
-                                    <a class="nav-link py-1" href="#">Speler Toevoegen</a>
-                                </div>
-                                </div>
-                            </div> 
-        
-                            </div>
-                        </div> -->
+ 
                         <div class="sidebar-bottom" >
                             <div class="text-white text-center ">
                                 <p class="mb-2">Opgeven voor een PK?</p>

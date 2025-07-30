@@ -37,19 +37,51 @@
                                <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="220"></a>
                             </div>
                             <ul class="sidebar-menu list-unstyled mt-5">
-                                <li><a href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
-                                <li><a href="contactlijst.html" class="active"><i class="bi bi-person-lines-fill me-2"></i>Contactlijst</a></li>
-                                <li><a href="#"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
-                                <li><div class="divider"></div></li>
-                                <li><a href="#"><i class="bi bi-trophy me-2"></i>Competitie</a></li>
-                                <li><a href="#"><i class="bi bi-people me-2"></i>Teams</a></li>
-                                <li><a href="#"><i class="bi bi-person-circle me-2"></i>Spelers</a></li> 
-                                <li><div class="divider"></div></li>
-                                <li><a href="#"><i class="bi bi-house-door me-2"></i>Clublokaal</a></li>
-                                <li><a href="#"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
-                                <li><a href="#"><i class="bi bi-pencil-square me-2"></i>Wedstrijd Invoeren</a></li>
-                                <li><a href="#"><i class="bi bi-sliders me-2"></i>Wedstrijd Aanpassen</a></li>
-                                </ul>
+                                    <li><a href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+                                    <li><a href="contactlijst.html" class="active"><i class="bi bi-person-lines-fill me-2"></i>Contactlijst</a></li>
+                                    <li><a href="wedstrijden.html"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
+
+                                    <li><div class="divider"></div></li>
+
+                                    <!-- Competitie Dropdown -->
+                                    <li>
+                                        <a href="#competitieMenu"  class="accordion-toggle menu-accordion-toggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="competitieMenu" class="active">
+                                            <span class="d-flex gap-3 align-items-center"><i class="bi bi-trophy me-2"></i>Competitie</span>
+                                            <i class="bi bi-chevron-down toggle-icon"></i>
+                                        </a>
+                                        <div class="collapse globalDropDownMenu" id="competitieMenu">
+                                            <ul class="nav flex-column ms-3 mt-2">
+                                                 <li><a href="competitie.html"><i class="bi bi-trophy me-2"></i>Competitie</a></li>
+                                                <li><a href="aanpassen-competitie.html"><i class="bi bi-pencil-square me-2"></i>Aanpassen Competitie</a></li>
+                                                <li><a href="aanpassen-klasse.html" ><i class="bi bi-sliders me-2"></i>Aanpassen Klasse</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="#"><i class="bi bi-people me-2"></i>Teams</a></li>
+
+                                    <!-- Spelers Dropdown -->
+                                    <li>
+                                        <a href="#spelersMenu"  class="accordion-toggle menu-accordion-toggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="spelersMenu">
+                                             <span class="d-flex gap-3 align-items-center"><i class="bi bi-trophy me-2"></i>Spelers</span>
+                                            <i class="bi bi-chevron-down toggle-icon"></i>
+                                        </a>
+                                        <div class="collapse globalDropDownMenu" id="spelersMenu">
+                                            <ul class="nav flex-column ms-3 mt-2">
+                                                <li><a href="#" >Competitie</a></li>
+                                                <li><a href="#"  >test1</a></li>
+                                                <li><a href="#" >test2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><div class="divider"></div></li>
+
+                                    <li><a href="#"><i class="bi bi-house-door me-2"></i>Clublokaal</a></li>
+                                    <li><a href="#"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
+                                    <li><a href="#"><i class="bi bi-pencil-square me-2"></i>Wedstrijd Invoeren</a></li>
+                                    <li><a href="#"><i class="bi bi-sliders me-2"></i>Wedstrijd Aanpassen</a></li>
+                            </ul>
 
                         </div>
  
@@ -114,63 +146,65 @@
                                 </div>
 
                                 <!-- 🧾 Table Section -->
-                                <div class="table-container">
-                                <table>
-                                    <thead>
-                                    <tr>
-                                        <th>Lidnummer</th>
-                                        <th>Naam</th>
-                                        <th>Mobiel</th>
-                                        <th>E-Mail</th>
-                                        <th>Moy.</th>
-                                        <th>Team</th>
-                                        <th>TL</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>22578921</td>
-                                        <td>Cees Jan van de Pieterman</td>
-                                        <td>061234678</td>
-                                        <td>cjvdpieterman@hotmail.com</td>
-                                        <td>10.999</td>
-                                        <td>'t Wapen van Borculo 01</td>
-                                        <td><i class="fa-solid fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>22578922</td>
-                                        <td>Mark de Jong</td>
-                                        <td>061234679</td>
-                                        <td>markjong@hotmail.com</td>
-                                        <td>9.456</td>
-                                        <td>'t Wapen van Borculo 02</td>
-                                        <td><i class="fa-solid fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>22578921</td>
-                                        <td>Cees Jan van de Pieterman</td>
-                                        <td>061234678</td>
-                                        <td>cjvdpieterman@hotmail.com</td>
-                                        <td>10.999</td>
-                                        <td>'t Wapen van Borculo 01</td>
-                                        <td><i class="fa-solid fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>22578922</td>
-                                        <td>Mark de Jong</td>
-                                        <td>061234679</td>
-                                        <td>markjong@hotmail.com</td>
-                                        <td>9.456</td>
-                                        <td>'t Wapen van Borculo 02</td>
-                                        <td><i class="fa-solid fa-check"></i></td>
-                                    </tr>
-                                    </tbody>
-                                </table> 
+                                <div class="card-box">
+                                    <div class="table-responsive">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th>Lidnummer</th>
+                                                <th>Naam</th>
+                                                <th>Mobiel</th>
+                                                <th>E-Mail</th>
+                                                <th>Moy.</th>
+                                                <th>Team</th>
+                                                <th>TL</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>22578921</td>
+                                                <td>Cees Jan van de Pieterman</td>
+                                                <td>061234678</td>
+                                                <td>cjvdpieterman@hotmail.com</td>
+                                                <td>10.999</td>
+                                                <td>'t Wapen van Borculo 01</td>
+                                                <td><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22578922</td>
+                                                <td>Mark de Jong</td>
+                                                <td>061234679</td>
+                                                <td>markjong@hotmail.com</td>
+                                                <td>9.456</td>
+                                                <td>'t Wapen van Borculo 02</td>
+                                                <td><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22578921</td>
+                                                <td>Cees Jan van de Pieterman</td>
+                                                <td>061234678</td>
+                                                <td>cjvdpieterman@hotmail.com</td>
+                                                <td>10.999</td>
+                                                <td>'t Wapen van Borculo 01</td>
+                                                <td><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22578922</td>
+                                                <td>Mark de Jong</td>
+                                                <td>061234679</td>
+                                                <td>markjong@hotmail.com</td>
+                                                <td>9.456</td>
+                                                <td>'t Wapen van Borculo 02</td>
+                                                <td><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            </tbody>
+                                        </table> 
+                                    </div> 
+                                    <div class="pagination">
+                                        <button class="active">1</button>
+                                        <button>2</button>
+                                    </div>
                                 </div>
-                            </div>
-                             <div class="pagination">
-                                <button class="active">1</button>
-                                <button>2</button>
                             </div>
                         </div> 
                     </div>
