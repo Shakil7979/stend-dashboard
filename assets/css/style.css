@@ -539,6 +539,8 @@
 	color: #0b5b3c;
   }
 
-
+.table-responsive{
+	scrollbar-width: none;
+}
 
  /*======================  End Page  ======================*/

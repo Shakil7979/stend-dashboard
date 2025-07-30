@@ -1,3 +1,8 @@
+@media all and (max-width: 1400px) {
+    .sidebar-content {
+        padding: 0 20px;
+    }
+}
 @media all and (max-width: 1199px) {}
 
 @media all and (max-width: 991px) {
