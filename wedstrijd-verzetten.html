@@ -9,7 +9,7 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
 
-        <title>Wedstrijden voor locatie</title>
+        <title>Wedstrijd Verzetten</title>
         <link rel="icon" href="assets/images/favicon.png">
 
         <!-- Bootstrap -->
@@ -39,7 +39,7 @@
                             <ul class="sidebar-menu list-unstyled mt-5">
                                     <li><a href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
                                     <li><a href="contactlijst.html"><i class="bi bi-person-lines-fill me-2"></i>Contactlijst</a></li>
-                                    <li><a href="wedstrijden.html" class="active"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
+                                    <li><a href="wedstrijden.html"><i class="bi bi-calendar-event me-2"></i>Wedstrijden voor locatie</a></li>
 
                                     <li><div class="divider"></div></li>
 
@@ -64,7 +64,7 @@
                                     <li><div class="divider"></div></li>
 
                                     <li><a href="404.html"><i class="bi bi-house-door me-2"></i>Clublokaal</a></li>
-                                    <li><a href="wedstrijd-verzetten.html"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
+                                    <li><a href="wedstrijd-verzetten.html" class="active"><i class="bi bi-arrow-repeat me-2"></i>Wedstrijd Verzetten</a></li>
                                     <li><a href="wedstrijd-invoeren.html"><i class="bi bi-pencil-square me-2"></i>Wedstrijd Invoeren</a></li>
                                     <li><a href="wedstrijd-aanpassen.html"><i class="bi bi-sliders me-2"></i>Wedstrijd Aanpassen</a></li>
                                 </ul>
@@ -119,13 +119,15 @@
 
                                 <!-- pages main title  -->
                                 <div class="pages-title mt-5">
-                                    <h3>Wedstrijden voor locatie</h3>
-                                    <p>Een lijst van alle wedstrijden in de gekozen vereniging.</p>
+                                    <h3>Wedstrijd Verzetten</h3>
+                                    <p>Kan een wedstrijd niet gespeeld worden? </p>
+                                    <p>Kies hieronder de klasse en kies vervolgens de wedstrijd. </p>
+                                    <p>En kies een nieuwe datum.</p>
                                 </div>
                                 <!-- 🔍 Filter Section -->
                                 <div class="filter-section "> 
-                                    <label for="team-filter">Filter:</label>
-                                    <select id="team-filter" style="width: 250px;">
+                                    <label for="team-filter">Klasse:</label>
+                                    <select id="team-filter" >
                                         <option value="">All Teams</option>
                                         <option value="borculo01">Kies een vereniging</option>
                                         <option value="borculo02">Kies een vereniging</option>
@@ -138,12 +140,12 @@
                                 <table>
                                     <thead>
                                     <tr>
-                                        <th>nummer</th>
-                                        <th>Thuis</th> 
-                                        <th>Uit</th>
+                                        <th>Nummer</th>
+                                        <th>Speelweek</th> 
                                         <th>Datum</th>
-                                        <th>Dag</th>
-                                        <th>Klasse</th>
+                                        <th>thuis</th>
+                                        <th>Uit</th>
+                                        <th>Actie</th>
                                     </tr>
                                     </thead>
                                     <tbody>
